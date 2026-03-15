@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Integral-CF';
+    src: url('../fonts/Integral-CF/integral-cf-medium.woff2') format('woff2'),
+         url('../fonts/Integral-CF/integral-cf-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi/Unnamed-Regular.woff2') format('woff2'),
+         url('../fonts/Satoshi/Unnamed-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Integral-CF', sans-serif;
+}
+
+body, div, p, span, li {
+    font-family: 'Satoshi', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Черный баннер */
+.top-banner {
+    width: 100%;
+    height: 38px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.top-banner button {
+    right: 20px;
+    position: absolute;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: white;
+    padding: 26px 0;
+}
+
+/* Лого */
+.logo {
+    font-family: 'Integral-CF', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Навигация */
+.navigation {
+    font-size: 16px;
+    display: flex;
+    gap: 24px;
+    color: black;
+}
+
+/* Поиск */
+.search {
+    width: 577px;
+    height: 48px;
+    background: #f0f0f0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.search img {
+    width: 20px;  /* подгони под макет */
+    height: 20px;
+}
+
+.search span {
+    font-size: 16px;
+    color: #999;  /* серый цвет для надписи */
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;  /* убирает точки у списка */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: black;
+}
+
+.container
+{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+}
