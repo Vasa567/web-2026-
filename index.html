@@ -12,7 +12,9 @@
     <header class="header">
         <div class="top-banner">
             <p>Sign up and get 20% off to your first order. <strong><u>Sign Up Now</u></strong></p>
-            <button>x</button>
+            <button>
+                <img src="../web-2026-/images/Cross.svg" alt="Крестик">
+            </button>
         </div>
 
         <div class="container">
@@ -21,17 +23,19 @@
 
                 <nav class="navigation">
                     <ul class="nav-list">
-                        <li class="nav-item">Shop</li>
-                        <li class="nav-item">On Sale</li>
-                        <li class="nav-item">New Arrivals</li>
-                        <li class="nav-item">Brands</li>
+                        <li class="nav-item"><a href="#">Shop</a></li>
+                        <li class="nav-item"><a href="#">On Sale</a></li>
+                        <li class="nav-item"><a href="#">New Arrivals</a></li>
+                        <li class="nav-item"><a href="#">Brands</a></li>
                     </ul>
                 </nav>
 
-                <div class="search">
-                    <a href="#"><img src="../web-2026-/images/Loupe.svg" alt="Лупа" class="icon"></a>
-                    <span>Search for product</span>
-                </div>
+                <form class="search" role="search">
+                    <button type="submit" class="search btn">
+                    <img src="../web-2026-/images/Loupe.svg" alt="Лупа" class="icon">
+                    </button>
+                    <input type="text" name="search" placeholder="Search for product" class="search-input">
+                </form>
 
                 <div class="icons">
                     <a href="#"><img src="../web-2026-/images/Cart.svg" alt="Корзина" class="icon"></a>
@@ -39,7 +43,6 @@
                 </div>
             </div>
         </div>
-    </header>
     </header>
 </body>
 
