@@ -845,3 +845,450 @@ color: rgba(0, 0, 0, 0.6)
     overflow: hidden;
     padding: 0;
 }
+
+/*Дополнительно для десктопа*/
+
+.homepage-img-mobile {
+    display: none;
+}
+
+.homepage-img-desc {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+/*АДАПТИВНОСТЬ под 1200*/
+
+@media (max-width: 1200px) {
+
+    /* Баннер */
+    .top-banner p {
+        font-size: 12px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .search {
+        display: none;   
+    }
+
+    .cross {
+        display: none;
+    }
+
+    .icons::before {
+        content: "";
+        background-image: url('../images/Search-icon-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        margin-right: 12px;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        order: 0;
+    }
+
+    .mobile-menu-icon img {
+        width: 18px;
+        height: 14px;
+        display: block;
+    }
+
+    /* Шапка */
+    .header-content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .logo {
+        order: 1;
+        font-size: 1.5rem; 
+        margin-right: auto;
+    }
+
+    .icons {
+        order: 2;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .icons img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header-content {
+        padding: 23px 0 23px 0;
+    }
+
+    /*НАЧАЛО MAIN*/
+
+    .container {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .homepage-text {
+        font-size: 36px;
+        max-width: auto;
+        text-align: left;
+    }
+
+    .homepage {
+        padding-top: 40px;
+        background-image: none;
+
+        padding-bottom: 0;
+    }
+
+    .homepage-img-desc {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .homepage-description {
+        font-size: 14px;
+        padding: 16px 0 0 0;
+        max-width: 100%;
+    }
+
+    .shop-button {
+        display: block;
+        width: 500px;
+        height: auto;
+        padding: 16px 0;
+        margin: 24px auto 32px auto;
+        font-size: 14px;
+    }
+
+    /*СТАТИСТИКА*/
+
+    .view-all {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .statistic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .stat-item {
+        flex: 0 0 calc(50% - 24px);
+        padding-right: 0;
+        border-right: none;
+        align-items: center;
+        text-align: center;
+    }
+
+    .stat-item {
+        border-right: none;
+    }
+
+    .stat-item:first-child {
+        border-right: 1px solid #e0e0e0;
+        padding-right: 24px;
+    }
+
+    .stat-item:nth-child(2) {
+        padding-left: 0;
+    }
+
+    .stat-item:last-child {
+        flex: 0 0 100%;
+        margin-top: 8px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .stat-label {
+        font-size: 12px;
+    }
+
+    .star-left {
+        width: 44px;
+        height: 44px;
+        top: auto;
+        top: 712px;
+        left: 500px;
+    }
+
+    .star-right {
+        width: 76px;
+        height: 76px;
+        top: 640px;
+        right: 30px;
+    }
+
+    /*Бренды*/
+
+    .brands {
+        min-height: 146px;  
+    }
+
+    .brands-list {
+        flex-wrap: wrap;  
+        gap: 20px; 
+        justify-content: center;
+        align-items: center;
+        padding: 16px 0; 
+    }
+
+    .brands-list li {
+        flex: 0 0 auto;
+    }
+
+    .brands-list img {
+        max-height: 26px;
+        width: auto;
+    }
+
+    /*СПИСКИ*/
+
+    .arrivals-selling {
+        font-size: 32px;
+        margin-top: 50px;
+        margin-bottom: 32px;
+    }
+
+
+    .product-element img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .name,
+    .product-link {
+        font-size: 16px;
+    }
+
+    .rating-value {
+        font-size: 12px;
+    }
+
+    .current-price {
+        font-size: 20px;
+    }
+
+    .past-price {
+        font-size: 20px;
+    }
+
+     .products {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;  
+        scroll-snap-type: x mandatory;
+        padding-bottom: 8px; 
+        margin: 0 -20px;    
+        padding-left: 20px;   
+        padding-right: 20px;  
+    }
+
+    .product-element {
+        flex: 0 0 200px;        
+        scroll-snap-align: start;
+    }
+
+    /*BROWSE BY STYLE*/
+
+    .section-title {
+        margin-top: 0px;
+        font-size: 32px;
+        max-width: 5000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .card-small,
+    .card-large {
+        width: 310px;
+        height: 190px;
+    }
+
+    /*REWIEW*/
+
+    .title-rewiew {
+        font-size: 32px;
+    }
+
+    .rewiew-table {
+        display: flex;
+        overflow-x: auto;         
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        margin: 20px 0 40px 0;
+        padding: 0 20px;
+    }
+
+    .rewiew {
+        flex: 0 0 85%;          
+        scroll-snap-align: start;
+        padding: 20px;
+        max-width: 500px;
+    }
+
+    .rewiew-header {
+        margin-top: 40px;
+        gap: 16px;
+    }
+
+    .rewiew-text {
+        font-size: 14px;
+    }
+
+    .name-customer {
+        font-size: 16px;
+    }
+
+    /*NEWSLETTER*/
+
+    .subscribe-section {
+        margin: 40px auto;          
+        padding: 32px 24px;         
+        max-width: 780px;           
+        border-radius: 20px;   
+        
+        position: relative;
+        z-index: 2;
+    }
+
+    .subscribe-content {
+        flex-direction: column;      
+        gap: 24px;
+        align-items: stretch;        
+    }
+
+    .subscribe-title {
+        font-size: 32px;            
+        max-width: 100%;
+        text-align: left;
+
+        word-wrap: break-word;
+        white-space: normal;
+        max-width: 350px;
+    }
+
+    .subscribe-form {
+        width: 100%;               
+    }
+
+    .email-input-wrapper {
+        padding: 14px 16px;
+    }
+
+    .email-input {
+        font-size: 14px;
+    }
+
+    .subscribe-btn {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+
+    /*FOOTER*/
+
+    .back-footer {
+        margin-top: -200px;
+        padding-top: 200px;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .back-footer .container {
+        padding: 0 16px;
+    }
+
+    .footer-information {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px 20px;
+    }
+
+    .footer-element {
+        flex: 0 0 calc(50% - 10px);
+        text-align: center;
+    }
+
+    .footer-element:first-child {
+        flex: 0 0 100%;
+        order: 0;
+    }
+
+    .brand-description {
+        max-width: 100%;
+        margin-top: 14px;
+    }
+
+    .contacts {
+        margin-top: 24px;
+        gap: 16px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-title {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+
+    .footer-text {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    .divider {
+        margin: 32px 0 24px;
+    }
+
+    .rights-payment {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .rights {
+        font-size: 12px;
+        order: 1;
+    }
+
+    .payment {
+        order: 2;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .payment img {
+        width: 40px;
+        height: auto;
+    }
+}
