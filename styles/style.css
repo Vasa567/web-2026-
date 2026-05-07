@@ -1375,14 +1375,11 @@ color: rgba(0, 0, 0, 0.6)
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
-        padding: 0;
-        margin: 0;
         overflow-x: visible;
     }
 
     .product-element {
         width: 100%;
-        max-width: 100%;
         scroll-snap-align: unset;
     }
 
