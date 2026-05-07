@@ -860,6 +860,76 @@ color: rgba(0, 0, 0, 0.6)
     display: none;
 }
 
+/*АНИМАЦИИ*/
+
+/*КНОПКИ*/
+
+.shop-button:hover {
+    background-color: #a4a4a4;
+    color: black;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.shop-button:active {
+    transform: scale(0.98);
+}
+
+.view-all:hover {
+    background-color: #7d7d7d;
+    color:#F0F0F0;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.view-all:active {
+    transform: scale(0.98);
+}
+
+/*товары*/
+
+.product-element img {
+    transition: transform 0.3s ease;
+}
+
+.product-element:hover img {
+    transform: scale(1.05);
+}
+
+/*browse by dress style*/
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/*соцсети в футере*/
+
+.payment a:hover img {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.contacts a:hover img {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+/*Ссылки*/
+
+.product-link {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease;
+}
+
+.product-link:hover {
+    color: #666;
+}
+
 /*АДАПТИВНОСТЬ под 1200*/
 
 @media (max-width: 1200px) {
@@ -910,7 +980,6 @@ color: rgba(0, 0, 0, 0.6)
         justify-content: space-between;
         align-items: center;
         gap: 12px;
-        padding: 0;
     }
 
     .logo {
@@ -952,13 +1021,18 @@ color: rgba(0, 0, 0, 0.6)
         padding-top: 40px;
         background-image: none;
 
-        padding-bottom: 0;
+        padding-bottom: 1px;
+
+        position: relative;
     }
 
     .homepage-img-desc {
         display: block;
         width: 100%;
         height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #f0f0f0;;
     }
     
     .homepage-description {
@@ -992,11 +1066,17 @@ color: rgba(0, 0, 0, 0.6)
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 24px;
+
+        position: absolute;
+        margin-top: 140px;
+
+        gap: 8px;
     }
 
     .stat-item {
-        flex: 0 0 calc(50% - 24px);
+        flex: 0 0 auto;
+        width: auto;
+
         padding-right: 0;
         border-right: none;
         align-items: center;
@@ -1009,11 +1089,8 @@ color: rgba(0, 0, 0, 0.6)
 
     .stat-item:first-child {
         border-right: 1px solid #e0e0e0;
-        padding-right: 24px;
-    }
-
-    .stat-item:nth-child(2) {
-        padding-left: 0;
+        padding-right: 8px;
+        margin-right: 8px;
     }
 
     .stat-item:last-child {
@@ -1030,17 +1107,16 @@ color: rgba(0, 0, 0, 0.6)
     }
 
     .star-left {
-        width: 44px;
-        height: 44px;
-        top: auto;
-        top: 712px;
-        left: 500px;
+        width: 3.66%;
+        height: auto;
+        top: 190.5%;
+        left: 41.66%;
     }
 
     .star-right {
         width: 76px;
         height: 76px;
-        top: 640px;
+        top: 340px;
         right: 30px;
     }
 
@@ -1099,15 +1175,16 @@ color: rgba(0, 0, 0, 0.6)
         font-size: 20px;
     }
 
-     .products {
+    .products {
         display: flex;
         gap: 12px;
         overflow-x: auto;  
         scroll-snap-type: x mandatory;
-        padding-bottom: 8px; 
-        margin: 0 -20px;    
+        padding-bottom: 8px;     
         padding-left: 20px;   
         padding-right: 20px;  
+
+        padding: 0 20px; 
     }
 
     .product-element {
@@ -1289,6 +1366,28 @@ color: rgba(0, 0, 0, 0.6)
 
     .payment img {
         width: 40px;
+        height: auto;
+    }
+}
+
+@media (min-width: 748px) and (max-width: 874px) {
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+        overflow-x: visible;
+    }
+
+    .product-element {
+        width: 100%;
+        max-width: 100%;
+        scroll-snap-align: unset;
+    }
+
+    .product-element img {
+        width: 100%;
         height: auto;
     }
 }
