@@ -864,22 +864,28 @@ color: rgba(0, 0, 0, 0.6)
 
 /*КНОПКИ*/
 
+.shop-button {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
 .shop-button:hover {
     background-color: #a4a4a4;
     color: black;
     transform: scale(1.02);
-    transition: all 0.3s ease;
 }
 
 .shop-button:active {
     transform: scale(0.98);
 }
 
+.view-all {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
 .view-all:hover {
     background-color: #7d7d7d;
-    color:#F0F0F0;
+    color: #F0F0F0;
     transform: scale(1.02);
-    transition: all 0.3s ease;
 }
 
 .view-all:active {
@@ -908,14 +914,14 @@ color: rgba(0, 0, 0, 0.6)
 
 /*соцсети в футере*/
 
-.payment a:hover img {
-    opacity: 0.5;
-    transition: opacity 0.2s;
+.payment a img,
+.contacts a img {
+    transition: opacity 0.2s ease;
 }
 
+.payment a:hover img,
 .contacts a:hover img {
     opacity: 0.5;
-    transition: opacity 0.2s;
 }
 
 /*Ссылки*/
@@ -936,7 +942,7 @@ color: rgba(0, 0, 0, 0.6)
 
     /* Баннер */
     .top-banner p {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .navigation {
@@ -956,10 +962,10 @@ color: rgba(0, 0, 0, 0.6)
         background-image: url('../images/Search-icon-mobile.svg');
         background-size: contain;
         background-repeat: no-repeat;
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
         display: inline-block;
-        margin-right: 12px;
+        margin-right: 1.5rem;
     }
 
     .mobile-menu-icon {
@@ -968,8 +974,8 @@ color: rgba(0, 0, 0, 0.6)
     }
 
     .mobile-menu-icon img {
-        width: 18px;
-        height: 14px;
+        width: 1.125rem;
+        height: 0.875rem;
         display: block;
     }
 
@@ -979,7 +985,7 @@ color: rgba(0, 0, 0, 0.6)
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        gap: 12px;
+        gap: 0.75rem;
     }
 
     .logo {
@@ -991,34 +997,34 @@ color: rgba(0, 0, 0, 0.6)
     .icons {
         order: 2;
         display: flex;
-        gap: 12px;
+        gap: 0.75rem;
         align-items: center;
     }
 
     .icons img {
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .header-content {
-        padding: 23px 0 23px 0;
+        padding: 1.4375rem 0 1.4375rem 0;
     }
 
     /*НАЧАЛО MAIN*/
 
     .container {
         margin: 0;
-        padding: 0 20px;
+        padding: 0 1.25rem;
     }
 
     .homepage-text {
-        font-size: 36px;
+        font-size: 2.25rem;
         max-width: auto;
         text-align: left;
     }
 
     .homepage {
-        padding-top: 40px;
+        padding-top: 2.5rem;
         background-image: none;
 
         padding-bottom: 1px;
@@ -1291,21 +1297,21 @@ color: rgba(0, 0, 0, 0.6)
     /*FOOTER*/
 
     .back-footer {
-        margin-top: -200px;
-        padding-top: 200px;
+        margin-top: -12.5rem;
+        padding-top: 12.5rem;
 
         position: relative;
         z-index: 1;
     }
 
     .back-footer .container {
-        padding: 0 16px;
+        padding: 0 1rem;
     }
 
     .footer-information {
         display: flex;
         flex-wrap: wrap;
-        gap: 32px 20px;
+        gap: 2rem 1.25rem;
     }
 
     .footer-element {
@@ -1320,40 +1326,40 @@ color: rgba(0, 0, 0, 0.6)
 
     .brand-description {
         max-width: 100%;
-        margin-top: 14px;
+        margin-top: 0.875rem;
     }
 
     .contacts {
-        margin-top: 24px;
-        gap: 16px;
+        margin-top: 1.5rem;
+        gap: 1rem;
 
         display: flex;
         justify-content: center;
     }
 
     .footer-title {
-        margin-bottom: 16px;
-        font-size: 14px;
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
     }
 
     .footer-text {
-        margin-top: 12px;
-        font-size: 12px;
+        margin-top: 0.75rem;
+        font-size: 0.75rem;
     }
 
     .divider {
-        margin: 32px 0 24px;
+        margin: 2rem 0 1.5rem;
     }
 
     .rights-payment {
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 1rem;
         text-align: center;
     }
 
     .rights {
-        font-size: 12px;
+        font-size: 0.75rem;
         order: 1;
     }
 
@@ -1361,11 +1367,11 @@ color: rgba(0, 0, 0, 0.6)
         order: 2;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
+        gap: 0.75rem;
     }
 
     .payment img {
-        width: 40px;
+        width: 2.5rem;
         height: auto;
     }
 }
