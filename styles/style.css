@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Integral-CF';
     src: url('../fonts/Integral-CF/Integral-CF-regular.woff') format('woff'),
-         url('../fonts/Integral-CF/Integral-CF-regular.woff2') format('woff2');
+        url('../fonts/Integral-CF/Integral-CF-regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'Integral-CF';
     src: url('../fonts/Integral-CF/Integral-CF-bold.woff2') format('woff2'),
-         url('../fonts/Integral-CF/Integral-CF-bold.woff') format('woff');
+        url('../fonts/Integral-CF/Integral-CF-bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'Integral-CF';
     src: url('../fonts/Integral-CF/Integral-CF-italic.woff2') format('woff2'),
-         url('../fonts/Integral-CF/Integral-CF-italic.woff') format('woff');
+        url('../fonts/Integral-CF/Integral-CF-italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -30,7 +30,7 @@
 @font-face {
     font-family: 'Satoshi';
     src: url('../fonts/Satoshi/Satoshi-Regular.woff2') format('woff2'),
-         url('../fonts/Satoshi/Satoshi-Regular.woff') format('woff');
+        url('../fonts/Satoshi/Satoshi-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -39,7 +39,7 @@
 @font-face {
     font-family: 'Satoshi';
     src: url('../fonts/Satoshi/Satoshi-Bold.woff2') format('woff2'),
-         url('../fonts/Satoshi/Satoshi-Bold.woff') format('woff');
+        url('../fonts/Satoshi/Satoshi-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -48,7 +48,7 @@
 @font-face {
     font-family: 'Satoshi';
     src: url('../fonts/Satoshi/Satoshi-Medium.woff2') format('woff2'),
-         url('../fonts/Satoshi/Satoshi-Medium.woff') format('woff');
+        url('../fonts/Satoshi/Satoshi-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -57,17 +57,24 @@
 @font-face {
     font-family: 'Satoshi';
     src: url('../fonts/Satoshi/Satoshi-Italic.woff2') format('woff2'),
-         url('../fonts/Satoshi/Satoshi-Italic.woff') format('woff');
+        url('../fonts/Satoshi/Satoshi-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Integral-CF', sans-serif;
 }
 
-body, div, p {
+body,
+div,
+p {
     font-family: 'Satoshi', sans-serif;
 }
 
@@ -151,13 +158,13 @@ body, div, p {
 .search {
     width: 577px;
     height: 48px;
-    background: #F0F0F0;  
-    border-radius: 62px; 
+    background: #F0F0F0;
+    border-radius: 62px;
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 0 20px;
-    border: none;  
+    border: none;
 }
 
 .search-btn {
@@ -183,14 +190,14 @@ body, div, p {
     font-family: 'Satoshi', sans-serif;
     font-size: 16px;
     line-height: auto;
-    color: #333;  
+    color: #333;
     padding: 0;
 }
 
 .search-input::placeholder {
     font-family: 'Satoshi', sans-serif;
     font-size: 16px;
-    color: #999; 
+    color: #999;
 }
 
 .icons {
@@ -250,7 +257,8 @@ body, div, p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #f0f0f0;;
+    background-color: #f0f0f0;
+    ;
     width: 100%;
     padding: 107px 0 80px 0;
 }
@@ -288,7 +296,7 @@ body, div, p {
     height: 52px;
     background-color: black;
     color: white;
-    border-radius: 62px; 
+    border-radius: 62px;
     margin: 32px 0 48px 0;
 }
 
@@ -311,15 +319,15 @@ body, div, p {
     height: 104px;
 }
 
- /*СТАТИСТИКА*/
+/*СТАТИСТИКА*/
 
 .statistic {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 32px;  
+    gap: 32px;
 }
 
 .stat-item {
@@ -344,18 +352,18 @@ body, div, p {
 }
 
 .stat-number {
-font-family: 'Satoshi', sans-serif;
-font-size: 40px;
-font-weight: bold;
-line-height: auto;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: auto;
 }
 
 .stat-label {
-font-family: 'Satoshi', sans-serif;
-font-size: 16px;
-font-weight: normal;
-line-height: 1.375;
-color: rgba(0, 0, 0, 0.6)
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.375;
+    color: rgba(0, 0, 0, 0.6)
 }
 
 .stat-label {
@@ -399,7 +407,7 @@ color: rgba(0, 0, 0, 0.6)
     color: black;
     font-family: 'Satoshi', sans-serif;
     font-weight: bold;
-    font-size: 20px;  
+    font-size: 20px;
     line-height: auto;
 }
 
@@ -435,35 +443,30 @@ color: rgba(0, 0, 0, 0.6)
 
 }
 
-.rate-stars[data-rating="5.0"]
-{
+.rate-stars[data-rating="5.0"] {
     width: 100px;
 }
 
-.rate-stars[data-rating="4.5"]
-{
+.rate-stars[data-rating="4.5"] {
     width: 90px;
 }
 
-.rate-stars[data-rating="4.0"]
-{
+.rate-stars[data-rating="4.0"] {
     width: 80px;
 }
 
-.rate-stars[data-rating="3.5"]
-{
+.rate-stars[data-rating="3.5"] {
     width: 70px;
 }
 
-.rate-stars[data-rating="3.0"]
-{
+.rate-stars[data-rating="3.0"] {
     width: 60px;
 }
 
 .name {
     font-family: 'Satoshi', sans-serif;
     font-weight: bold;
-    font-size: 20px;  
+    font-size: 20px;
     line-height: auto;
 }
 
@@ -476,14 +479,14 @@ color: rgba(0, 0, 0, 0.6)
 .current-price {
     font-family: 'Satoshi', sans-serif;
     font-weight: bold;
-    font-size: 24px;  
+    font-size: 24px;
     line-height: auto;
 }
 
 .past-price {
     font-family: 'Satoshi', sans-serif;
     font-weight: bold;
-    font-size: 24px;  
+    font-size: 24px;
     line-height: auto;
     color: rgba(0, 0, 0, 0.6);
     text-decoration: line-through;
@@ -562,12 +565,15 @@ color: rgba(0, 0, 0, 0.6)
 .card:first-child {
     background-image: url('../images/casual-style.png');
 }
+
 .card:nth-child(2) {
     background-image: url('../images/formal-style.png');
 }
+
 .card:nth-child(3) {
     background-image: url('../images/party-style.png');
 }
+
 .card:nth-child(4) {
     background-image: url('../images/gym-style.png');
 }
@@ -662,9 +668,9 @@ color: rgba(0, 0, 0, 0.6)
 .subscribe-section {
     display: flex;
     justify-content: center;
-    margin: 80px auto;       
+    margin: 80px auto;
     background: black;
-    border-radius: 40px;        
+    border-radius: 40px;
     padding: 48px 64px;
     width: 100%;
     max-width: 1200px;
@@ -677,7 +683,7 @@ color: rgba(0, 0, 0, 0.6)
 .subscribe-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;        
+    align-items: center;
     gap: 40px;
     width: 100%;
 }
@@ -936,6 +942,82 @@ color: rgba(0, 0, 0, 0.6)
     color: #666;
 }
 
+/*Для js*/
+
+.modal-window {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    font-family: 'Satoshi', sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.modal-content {
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*login*/
+
+.login-form {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 62px;
+    padding: 12px 20px;
+    gap: 12px;
+
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.login-input {
+    border: none;
+    outline: none;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    background: transparent;
+}
+
+.login-input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.submit-button {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background: rgb(100, 255, 92);
+    border: none;
+    border-radius: 62px;
+    padding: 12px 20px;
+
+    margin-top: 12px;
+    min-width: 340px;
+}
+
 /*АДАПТИВНОСТЬ под 1200*/
 
 @media (max-width: 1200px) {
@@ -950,7 +1032,7 @@ color: rgba(0, 0, 0, 0.6)
     }
 
     .search {
-        display: none;   
+        display: none;
     }
 
     .cross {
@@ -990,7 +1072,7 @@ color: rgba(0, 0, 0, 0.6)
 
     .logo {
         order: 1;
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         margin-right: auto;
     }
 
@@ -1038,9 +1120,10 @@ color: rgba(0, 0, 0, 0.6)
         height: auto;
         margin-right: auto;
         margin-left: auto;
-        background-color: #f0f0f0;;
+        background-color: #f0f0f0;
+        ;
     }
-    
+
     .homepage-description {
         font-size: 14px;
         padding: 16px 0 0 0;
@@ -1129,15 +1212,15 @@ color: rgba(0, 0, 0, 0.6)
     /*Бренды*/
 
     .brands {
-        min-height: 146px;  
+        min-height: 146px;
     }
 
     .brands-list {
-        flex-wrap: wrap;  
-        gap: 20px; 
+        flex-wrap: wrap;
+        gap: 20px;
         justify-content: center;
         align-items: center;
-        padding: 16px 0; 
+        padding: 16px 0;
     }
 
     .brands-list li {
@@ -1184,17 +1267,17 @@ color: rgba(0, 0, 0, 0.6)
     .products {
         display: flex;
         gap: 12px;
-        overflow-x: auto;  
+        overflow-x: auto;
         scroll-snap-type: x mandatory;
-        padding-bottom: 8px;     
-        padding-left: 20px;   
-        padding-right: 20px;  
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
 
-        padding: 0 20px; 
+        padding: 0 20px;
     }
 
     .product-element {
-        flex: 0 0 200px;        
+        flex: 0 0 200px;
         scroll-snap-align: start;
     }
 
@@ -1222,7 +1305,7 @@ color: rgba(0, 0, 0, 0.6)
 
     .rewiew-table {
         display: flex;
-        overflow-x: auto;         
+        overflow-x: auto;
         scroll-snap-type: x mandatory;
         gap: 16px;
         margin: 20px 0 40px 0;
@@ -1230,7 +1313,7 @@ color: rgba(0, 0, 0, 0.6)
     }
 
     .rewiew {
-        flex: 0 0 85%;          
+        flex: 0 0 85%;
         scroll-snap-align: start;
         padding: 20px;
         max-width: 500px;
@@ -1252,23 +1335,23 @@ color: rgba(0, 0, 0, 0.6)
     /*NEWSLETTER*/
 
     .subscribe-section {
-        margin: 40px auto;          
-        padding: 32px 24px;         
-        max-width: 780px;           
-        border-radius: 20px;   
-        
+        margin: 40px auto;
+        padding: 32px 24px;
+        max-width: 780px;
+        border-radius: 20px;
+
         position: relative;
         z-index: 2;
     }
 
     .subscribe-content {
-        flex-direction: column;      
+        flex-direction: column;
         gap: 24px;
-        align-items: stretch;        
+        align-items: stretch;
     }
 
     .subscribe-title {
-        font-size: 32px;            
+        font-size: 32px;
         max-width: 100%;
         text-align: left;
 
@@ -1278,7 +1361,7 @@ color: rgba(0, 0, 0, 0.6)
     }
 
     .subscribe-form {
-        width: 100%;               
+        width: 100%;
     }
 
     .email-input-wrapper {

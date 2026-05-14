@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+
     <title>Shop.co</title>
 </head>
 
@@ -42,7 +43,7 @@
 
                 <div class="icons">
                     <a href="#"><img src="images/Cart.svg" alt="Корзина" class="icon"></a>
-                    <a href="#"><img src="images/Profile.svg" alt="Профиль" class="icon"></a>
+                    <a href="#"><img src="images/Profile.svg" alt="Профиль" class="icon" id="profile-icon"></a>
                 </div>
             </div>
         </div>
@@ -387,6 +388,29 @@
             </div>
         </section>
     </footer>
+
+    <div id="authModal" class="modal-window">
+        <div class="modal-content">
+            <span class="close-button">
+                <img src="images/Cross.svg" alt="cross">
+            </span>
+            <h2>Sign in to Shop.co</h2>
+
+            <form class="login-form" action="#" method="post">
+                <input type="text" name="login" placeholder="login" class="login-input" required>
+            </form>
+
+            <form class="email-form" action="#" method="post">
+                <div class="email-input-wrapper">
+                    <img src="images/mail.svg" alt="email" class="email-icon">
+                    <input type="email" name="email" placeholder="Email" class="email-input" required>
+                </div>
+                <button type="submit" class="submit-button">Sign in</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
